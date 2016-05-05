@@ -381,6 +381,7 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         (u" وب سایت", " http://python-ir.org", True),
+        (u"گروه تلگرام پایتون", " http://bit.ly/python-ir", True),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
