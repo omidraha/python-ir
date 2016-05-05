@@ -1,0 +1,18 @@
+{# Import the theme's layout. #}
+{% extends "!layout.html" %}
+{# Custom CSS overrides #}
+{% set bootswatch_css_custom = ['_static/css/bootstrap-rtl.min.css', '_static/css/bootstrap-sphinx-rtl.css'] %}
+
+{# Add some extra stuff before and use existing with 'super()' call. #}
+{% block footer %}
+
+{{ super() }}
+<p class="text-center">
+    تمامی مطالب ارائه شده تحت مالکیت وب سایت
+    <a href="Http://python-ir.org">Python-ir.org</a>
+    می باشد.
+</p>
+
+
+{% endblock %}
+
