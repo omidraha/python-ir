@@ -1,0 +1,119 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/collections/counter.rst:3
+msgid "Counter"
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:5
+msgid ""
+"A :class:`Counter` is a container that keeps track of how many times "
+"equivalent values are added.  It can be used to implement the same "
+"algorithms for which bag or multiset data structures are commonly used in"
+" other languages."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:11
+msgid "Initializing"
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:13
+msgid ""
+":class:`Counter` supports three forms of initialization.  Its constructor"
+" can be called with a sequence of items, a dictionary containing keys and"
+" counts, or using keyword arguments mapping string names to counts."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:22
+msgid "The results of all three forms of initialization are the same."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:38
+msgid ""
+"An empty :class:`Counter` can be constructed with no arguments and "
+"populated via the :func:`update` method."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:45
+msgid ""
+"The count values are increased based on the new data, rather than "
+"replaced.  In this example, the count for ``a`` goes from ``3`` to ``4``."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:64
+msgid "Accessing Counts"
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:66
+msgid ""
+"Once a :class:`Counter` is populated, its values can be retrieved using "
+"the dictionary API."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:73
+msgid ""
+":class:`Counter` does not raise :ref:`KeyError <exceptions-KeyError>` for"
+" unknown items.  If a value has not been seen in the input (as with ``e``"
+" in this example), its count is ``0``."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:93
+msgid ""
+"The :func:`elements` method returns an iterator that produces all of the "
+"items known to the :class:`Counter`."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:100
+msgid ""
+"The order of elements is not guaranteed, and items with counts less than "
+"zero are not included."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:116
+msgid ""
+"Use :func:`most_common` to produce a sequence of the *n* most frequently "
+"encountered input values and their respective counts."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:123
+msgid ""
+"This example counts the letters appearing in all of the words in the "
+"system dictionary to produce a frequency distribution, then prints the "
+"three most common letters.  Leaving out the argument to "
+":func:`most_common` produces a list of all the items, in order of "
+"frequency."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:145
+msgid "Arithmetic"
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:147
+msgid ""
+":class:`Counter` instances support arithmetic and set operations for "
+"aggregating results."
+msgstr ""
+
+#: ../../src/PyMOTW/collections/counter.rst:154
+msgid ""
+"Each time a new :class:`Counter` is produced through an operation, any "
+"items with zero or negative counts are discarded.  The count for ``a`` is"
+" the same in :data:`c1` and :data:`c2`, so subtraction leaves it at zero."
+msgstr ""
+

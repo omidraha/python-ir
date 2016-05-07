@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/heapq/index.rst:3
+msgid "heapq -- In-place heap sort algorithm"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:9
+msgid ""
+"The heapq implements a min-heap sort algorithm suitable for use with "
+"Python's lists."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:11
+msgid "New in 2.3 with additions in 2.5"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:13
+msgid ""
+"A *heap* is a tree-like data structure where the child nodes have a sort-"
+"order relationship with the parents. *Binary heaps* can be represented "
+"using a list or array organized so that the children of element N are at "
+"positions 2*N+1 and 2*N+2 (for zero-based indexes). This layout makes it "
+"possible to rearrange heaps in place, so it is not necessary to "
+"reallocate as much memory when adding or removing items."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:21
+msgid ""
+"A max-heap ensures that the parent is larger than or equal to both of its"
+" children. A min-heap requires that the parent be less than or equal to "
+"its children. Python's heapq module implements a min-heap."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:26
+msgid "Example Data"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:28
+msgid "The examples below use this sample data:"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:34
+msgid "The heap output is printed using ``heapq_showtree.py``:"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:43
+msgid "Creating a Heap"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:45
+msgid "There are 2 basic ways to create a heap, ``heappush()`` and ``heapify()``."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:48
+msgid ""
+"Using ``heappush()``, the heap sort order of the elements is maintained "
+"as new items are added from a data source."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:114
+msgid ""
+"If the data is already in memory, it is more efficient to use "
+"``heapify()`` to rearrange the items of the list in place."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:142
+msgid "Accessing Contents of a Heap"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:144
+msgid ""
+"Once the heap is organized correctly, use ``heappop()`` to remove the "
+"element with the lowest value. In this example, adapted from the stdlib "
+"documentation, ``heapify()`` and ``heappop()`` are used to sort a list of"
+" numbers."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:217
+msgid ""
+"To remove existing elements and replace them with new values in a single "
+"operation, use ``heapreplace()``."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:224
+msgid ""
+"Replacing elements in place lets you maintain a fixed size heap, such as "
+"a queue of jobs ordered by priority."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:281
+msgid "Data Extremes"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:283
+msgid ""
+":mod:`heapq` also includes 2 functions to examine an iterable to find a "
+"range of the largest or smallest values it contains. Using ``nlargest()``"
+" and ``nsmallest()`` are really only efficient for relatively small "
+"values of n > 1, but can still come in handy in a few cases."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:312
+msgid "`heapq <http://docs.python.org/library/heapq.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:312
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:315
+msgid ""
+"`WikiPedia: Heap (data structure) "
+"<http://en.wikipedia.org/wiki/Heap_(data_structure)>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:315
+msgid "A general description of heap data structures."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:318
+msgid ":ref:`article-data-structures`"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:318
+msgid "Other Python data structures."
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:321
+msgid ":ref:`Queue-PriorityQueue`"
+msgstr ""
+
+#: ../../src/PyMOTW/heapq/index.rst:321
+msgid "A priority queue implementation from :mod:`Queue` in the standard library."
+msgstr ""
+

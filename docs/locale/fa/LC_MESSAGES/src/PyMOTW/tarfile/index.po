@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/tarfile/index.rst:3
+msgid "tarfile -- Tar archive access"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:8
+msgid "Tar archive access."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:9
+msgid "2.3 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:11
+msgid ""
+"The :mod:`tarfile` module provides read and write access to UNIX tar "
+"archives, including compressed files.  In addition to the POSIX "
+"standards, several GNU tar extensions are supported.  Various UNIX "
+"special file types (hard and soft links, device nodes, etc.) are also "
+"handled."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:18
+msgid "Testing Tar Files"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:20
+msgid ""
+"The :func:`is_tarfile()` function returns a boolean indicating whether or"
+" not the filename passed as an argument refers to a valid tar file."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:27
+msgid ""
+"If the file does not exist, :func:`is_tarfile()` raises an :ref:`IOError "
+"<exceptions-IOError>`."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:46
+msgid "Reading Meta-data from an Archive"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:48
+msgid ""
+"Use the :class:`TarFile` class to work directly with a tar archive. It "
+"supports methods for reading data about existing archives as well as "
+"modifying the archives by adding additional files."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:52
+msgid ""
+"To read the names of the files in an existing archive, use "
+":func:`getnames()`:"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:59
+msgid ""
+"The return value is a list of strings with the names of the archive "
+"contents:"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:74
+msgid ""
+"In addition to names, meta-data about the archive members is available as"
+" instances of :class:`TarInfo` objects.  Load the meta-data via "
+":func:`getmembers()` and :func:`getmember()`."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:100
+msgid ""
+"If you know in advance the name of the archive member, you can retrieve "
+"its :class:`TarInfo` object with :func:`getmember()`."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:107
+msgid ""
+"If the archive member is not present, :func:`getmember()` raises a "
+":ref:`KeyError <exceptions-KeyError>`."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:124
+msgid "Extracting Files From an Archive"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:126
+msgid ""
+"To access the data from an archive member within your program, use the "
+":func:`extractfile()` method, passing the member's name."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:147
+msgid ""
+"If you just want to unpack the archive and write the files to the "
+"filesystem, use :func:`extract()` or :func:`extractall()` instead."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:170
+msgid ""
+"The standard library documentation includes a note stating that "
+":func:`extractall()` is safer than :func:`extract()`, and it should be "
+"used in most cases."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:192
+msgid ""
+"If you only want to extract certain files from the archive, their names "
+"can be passed to :func:`extractall()`."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:214
+msgid "Creating New Archives"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:216
+msgid ""
+"To create a new archive, simply open the :class:`TarFile` with a mode of "
+"``'w'``. Any existing file is truncated and a new archive is started. To "
+"add files, use the :func:`add()` method."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:244
+msgid "Using Alternate Archive Member Names"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:246
+msgid ""
+"It is possible to add a file to an archive using a name other than the "
+"original file name, by constructing a :class:`TarInfo` object with an "
+"alternate *arcname* and passing it to :func:`addfile()`."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:254
+msgid "The archive includes only the changed filename:"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:274
+msgid "Writing Data from Sources Other Than Files"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:276
+msgid ""
+"Sometimes you want to write data to an archive but the data is not in a "
+"file on the filesystem. Rather than writing the data to a file, then "
+"adding that file to the archive, you can use :func:`addfile()` to add "
+"data from an open file-like handle."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:285
+msgid ""
+"By first constructing a :class:`TarInfo` object ourselves, we can give "
+"the archive member any name we wish.  After setting the size, we can "
+"write the data to the archive using :func:`addfile()` and passing a "
+":mod:`StringIO` buffer as a source of the data."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:306
+msgid "Appending to Archives"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:308
+msgid ""
+"In addition to creating new archives, it is possible to append to an "
+"existing file. To open a file to append to it, use mode ``'a'``."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:315
+msgid "The resulting archive ends up with two members:"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:333
+msgid "Working with Compressed Archives"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:335
+msgid ""
+"Besides regular tar archive files, the :mod:`tarfile` module can work "
+"with archives compressed via the gzip or bzip2 protocols.  To open a "
+"compressed archive, modify the mode string passed to open() to include "
+"``\":gz\"`` or ``\":bz2\"``, depending on the compression method you want"
+" to use."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:345
+msgid ""
+"When opening an existing archive for reading, you can specify ``\"r:*\"``"
+" to have :mod:`tarfile` determine the compression method to use "
+"automatically."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:370
+msgid "`tarfile <http://docs.python.org/library/tarfile.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:370
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:373
+msgid ""
+"`GNU tar manual "
+"<http://www.gnu.org/software/tar/manual/html_node/Standard.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:373
+msgid "Documentation of the tar format, including extensions."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:376
+msgid ":mod:`zipfile`"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:376
+msgid "Similar access for ZIP archives."
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:379
+msgid ":mod:`gzip`"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:379
+msgid "GNU zip compression"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:381
+msgid ":mod:`bz2`"
+msgstr ""
+
+#: ../../src/PyMOTW/tarfile/index.rst:382
+msgid "bzip2 compression"
+msgstr ""
+

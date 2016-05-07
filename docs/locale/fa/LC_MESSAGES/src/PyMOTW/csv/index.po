@@ -1,0 +1,389 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/csv/index.rst:3
+msgid "csv -- Comma-separated value files"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:8
+msgid "Read and write comma separated value files."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:9
+msgid "2.3 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:11
+msgid ""
+"The :mod:`csv` module is useful for working with data exported from "
+"spreadsheets and databases into text files formatted with fields and "
+"records, commonly referred to as *comma-separated value* (CSV) format "
+"because commas are often used to separate the fields in a record."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:18
+msgid ""
+"The Python 2.5 version of :mod:`csv` does not support Unicode data. There"
+" are also \"issues with ASCII NUL characters\". Using UTF-8 or printable "
+"ASCII is recommended."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:23
+msgid "Reading"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:25
+msgid ""
+"Use :func:`reader` to create a an object for reading data from a CSV "
+"file.  The reader can be used as an iterator to process the rows of the "
+"file in order. For example:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:33
+msgid ""
+"The first argument to :func:`reader` is the source of text lines. In this"
+" case, it is a file, but any iterable is accepted (:mod:`StringIO` "
+"instances, lists, etc.).  Other optional arguments can be given to "
+"control how the input data is parsed."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:38
+msgid "This example file was exported from NeoOffice_."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:43
+msgid ""
+"As it is read, each row of the input data is parsed and converted to a "
+"list of strings."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:68
+msgid ""
+"The parser handles line breaks embedded within strings in a row, which is"
+" why a \"row\" is not always the same as a \"line\" of input from the "
+"file."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:75
+msgid ""
+"Values with line breaks in the input retain the internal line breaks when"
+" returned by the parser."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:92
+msgid "Writing"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:94
+msgid ""
+"Writing CSV files is just as easy as reading them. Use :func:`writer` to "
+"create an object for writing, then iterate over the rows, using "
+":func:`writerow` to print them."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:102
+msgid ""
+"The output does not look exactly like the exported data used in the "
+"reader example:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:128
+msgid ""
+"The default quoting behavior is different for the writer, so the string "
+"column is not quoted. That is easy to change by adding a quoting argument"
+" to quote non-numeric values:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:136
+msgid "And now the strings are quoted:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:164
+msgid "Quoting"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:166
+msgid ""
+"There are four different quoting options, defined as constants in the csv"
+" module."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:170
+msgid "QUOTE_ALL"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:170
+msgid "Quote everything, regardless of type."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:174
+msgid "QUOTE_MINIMAL"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:173
+msgid ""
+"Quote fields with special characters (anything that would confuse a "
+"parser configured with the same dialect and options). This is the default"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:178
+msgid "QUOTE_NONNUMERIC"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:177
+msgid ""
+"Quote all fields that are not integers or floats. When used with the "
+"reader, input fields that are not quoted are converted to floats."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:184
+msgid "QUOTE_NONE"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:181
+msgid ""
+"Do not quote anything on output. When used with the reader, quote "
+"characters are included in the field values (normally, they are treated "
+"as delimiters and stripped)."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:187
+msgid "Dialects"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:189
+msgid ""
+"There is no well-defined standard for comma-separated value files, so the"
+" parser needs to be flexible.  This flexibility means there are many "
+"parameters to control how :mod:`csv` parses or writes data. Rather than "
+"passing each of these parameters to the reader and writer separately, "
+"they are grouped together conveniently into a *dialect* object."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:196
+msgid ""
+"Dialect classes can be registered by name, so that callers of the csv "
+"module do not need to know the parameter settings in advance.  The "
+"complete list of registered dialects can be retrieved with "
+":func:`list_dialects`."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:205
+msgid ""
+"The standard library includes two dialects: ``excel``, and ``excel-"
+"tabs``. The ``excel`` dialect is for working with data in the default "
+"export format for Microsoft Excel, and also works with OpenOffice or "
+"NeoOffice."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:223
+msgid "Creating a Dialect"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:225
+msgid ""
+"Suppose instead of using commas to delimit fields, the input file uses "
+"``|``, like this:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:231
+msgid "A new dialect can be registered using the appropriate delimiter:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:237
+msgid "and the file can be read just as with the comma-delimited file:"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:253
+msgid "Dialect Parameters"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:255
+msgid ""
+"A dialect specifies all of the tokens used when parsing or writing a data"
+" file.  Every aspect of the file format can be specified, from the way "
+"columns are delimited to the character used to escape a token."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:260
+msgid "Attribute"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:260
+msgid "Default"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:260
+msgid "Meaning"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:262
+msgid "delimiter"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:262
+msgid "``,``"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:262
+msgid "Field separator (one character)"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:263
+msgid "doublequote"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:263
+msgid "True"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:263
+msgid "Flag controlling whether quotechar instances are doubled"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:264
+msgid "escapechar"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:264
+msgid "None"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:264
+msgid "Character used to indicate an escape sequence"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:265
+msgid "lineterminator"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:265
+msgid "``\\r\\n``"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:265
+msgid "String used by writer to terminate a line"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:266
+msgid "quotechar"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:266
+msgid "``\"``"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:266
+msgid "String to surround fields containing special values (one character)"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:267
+msgid "quoting"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:267
+msgid ":const:`QUOTE_MINIMAL`"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:267
+msgid "Controls quoting behavior described above"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:268
+msgid "skipinitialspace"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:268
+msgid "False"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:268
+msgid "Ignore whitespace after the field delimiter"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:275
+msgid ""
+"This program shows how the same data appears in several different "
+"dialects."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:337
+msgid "Automatically Detecting Dialects"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:339
+msgid ""
+"The best way to configure a dialect for parsing an input file is to know "
+"the right settings in advance.  For data where the dialect parameters are"
+" unknown, the :class:`Sniffer` class can be used to make an educated "
+"guess.  The :func:`sniff` method takes a sample of the input data and an "
+"optional argument giving the possible delimiter characters."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:350
+msgid ""
+":func:`sniff` returns a :class:`Dialect` instance with the settings to be"
+" used for parsing the data.  The results are not always perfect, as "
+"demonstrated by the \"escaped\" dialect in the example."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:391
+msgid "Using Field Names"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:393
+msgid ""
+"In addition to working with sequences of data, the :mod:`csv` module "
+"includes classes for working with rows as dictionaries so that the fields"
+" can be named. The :class:`DictReader` and :class:`DictWriter` classes "
+"translate rows to dictionaries instead of lists. Keys for the dictionary "
+"can be passed in, or inferred from the first row in the input (when the "
+"row contains headers)."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:404
+msgid ""
+"The dictionary-based reader and writer are implemented as wrappers around"
+" the sequence-based classes, and use the same methods and arguments. The "
+"only difference in the reader API is that rows are returned as "
+"dictionaries instead of lists or tuples."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:429
+msgid ""
+"The :class:`DictWriter` must be given a list of field names so it knows "
+"how to order the columns in the output."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:462
+msgid "`csv <http://docs.python.org/library/csv.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:462
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:464
+msgid ":pep:`305`"
+msgstr ""
+
+#: ../../src/PyMOTW/csv/index.rst:465
+msgid "CSV File API"
+msgstr ""
+

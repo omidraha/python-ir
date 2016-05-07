@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/locale/index.rst:3
+msgid "locale -- POSIX cultural localization API"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:8
+msgid "Format and parse values that depend on location or language."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:9
+msgid "1.5 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:11
+msgid ""
+"The :mod:`locale` module is part of Python's internationalization and "
+"localization support library. It provides a standard way to handle "
+"operations that may depend on the language or location of a user. For "
+"example, it handles formatting numbers as currency, comparing strings for"
+" sorting, and working with dates. It does not cover translation (see the "
+":mod:`gettext` module) or Unicode encoding."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:20
+msgid ""
+"Changing the locale can have application-wide ramifications, so the "
+"recommended practice is to avoid changing the value in a library and to "
+"let the application set it one time. In the examples below, the locale is"
+" changed several times within a short program to highlight the "
+"differences in the settings of various locales. It is far more likely "
+"that your application will set the locale once at startup and not change "
+"it."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:29
+msgid "Probing the Current Locale"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:31
+msgid ""
+"The most common way to let the user change the locale settings for an "
+"application is through an environment variable (:data:`LC_ALL`, "
+":data:`LC_CTYPE`, :data:`LANG`, or :data:`LANGUAGE`, depending on the "
+"platform). The application then calls :func:`setlocale` without a hard-"
+"coded value, and the environment value is used."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:41
+msgid ""
+"The :func:`localeconv` method returns a dictionary containing the "
+"locale's conventions.  The full list of value names and definitions is "
+"covered in the standard library documentation."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:45
+msgid ""
+"A Mac running OS X 10.6 with all of the variables unset produces this "
+"output:"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:90
+msgid ""
+"Running the same script with the :data:`LANG` variable set shows how the "
+"locale and default encoding change:"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:93
+msgid "France (``fr_FR``):"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:138
+msgid "Spain (``es_ES``):"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:183
+msgid "Portgual (``pt_PT``):"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:229
+msgid "Poland (``pl_PL``):"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:276
+msgid "Currency"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:278
+msgid ""
+"The example output above shows that changing the locale updates the "
+"currency symbol setting and the character to separate whole numbers from "
+"decimal fractions.  This example loops through several different locales "
+"to print a positive and negative currency value formatted for each "
+"locale:"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:288
+msgid "The output is this small table:"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:307
+msgid "Formatting Numbers"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:309
+msgid ""
+"Numbers not related to currency are also formatted differently depending "
+"on the locale.  In particular, the *grouping* character used to separate "
+"large numbers into readable chunks is changed:"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:317
+msgid ""
+"To format numbers without the currency symbol, use :func:`format` instead"
+" of :func:`currency`."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:340
+msgid "Parsing Numbers"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:342
+msgid ""
+"Besides generating output in different formats, the :mod:`locale` module "
+"helps with parsing input. It includes :func:`atoi` and :func:`atof` "
+"functions for converting the strings to integer and floating point values"
+" based on the locale's numerical formatting conventions."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:352
+msgid "The grouping and decimal separator values"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:372
+msgid "Dates and Times"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:374
+msgid "Another important aspect of localization is date and time formatting:"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:396
+msgid ""
+"This discussion only covers some of the high-level functions in the "
+":mod:`locale` module. There are others which are lower level "
+"(:func:`format_string`) or which relate to managing the locale for your "
+"application (:func:`resetlocale`)."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:404
+msgid "`locale <http://docs.python.org/library/locale.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:404
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:406
+msgid ":mod:`gettext`"
+msgstr ""
+
+#: ../../src/PyMOTW/locale/index.rst:407
+msgid "Message catalogs for translations."
+msgstr ""
+

@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/textwrap/index.rst:3
+msgid "textwrap -- Formatting text paragraphs"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:8
+msgid "Formatting text by adjusting where line breaks occur in a paragraph."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:9
+msgid "2.5"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:11
+msgid ""
+"The :mod:`textwrap` module can be used to format text for output in "
+"situations where pretty-printing is desired. It offers programmatic "
+"functionality similar to the paragraph wrapping or filling features found"
+" in many text editors."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:17
+msgid "Example Data"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:19
+msgid ""
+"The examples below use ``textwrap_example.py``, which contains a string "
+"``sample_text``:"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:28
+msgid "Filling Paragraphs"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:30
+msgid ""
+"The :func:`fill()` convenience function takes text as input and produces "
+"formatted text as output. Let's see what it does with the sample_text "
+"provided."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:38
+msgid "The results are something less than what we want:"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:59
+msgid "Removing Existing Indentation"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:61
+msgid ""
+"Notice the embedded tabs and extra spaces mixed into the middle of the "
+"output. It looks pretty rough. We can do better if we start by removing "
+"any common whitespace prefix from all of the lines in the sample text. "
+"This allows us to use docstrings or embedded multi-line strings straight "
+"from our Python code while removing the formatting of the code itself. "
+"The sample string has an artificial indent level introduced for "
+"illustrating this feature."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:73
+msgid "The results are starting to look better:"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:91
+msgid ""
+"Since \"dedent\" is the opposite of \"indent\", the result is a block of "
+"text with the common initial whitespace from each line removed. If one "
+"line is already indented more than another, some of the whitespace will "
+"not be removed."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:102
+msgid "becomes"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:112
+msgid "Combining Dedent and Fill"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:114
+msgid ""
+"Next, let's see what happens if we take the dedented text and pass it "
+"through :func:`fill()` with a few different *width* values."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:122
+msgid "This gives several sets of output in the specified widths:"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:167
+msgid "Hanging Indents"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:169
+msgid ""
+"Besides the width of the output, you can control the indent of the first "
+"line independently of subsequent lines."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:176
+msgid ""
+"This makes it relatively easy to produce a hanging indent, where the "
+"first line is indented less than the other lines."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:194
+msgid ""
+"The indent values can include non-whitespace characters, too, so the "
+"hanging indent can be prefixed with ``*`` to produce bullet points, etc. "
+"That came in handy when I converted my old zwiki content so I could "
+"import it into trac. I used the StructuredText package from Zope to parse"
+" the zwiki data, then created a formatter to produce trac's wiki markup "
+"as output. Using :mod:`textwrap`, I was able to format the output pages "
+"so almost no manual tweaking was needed after the conversion."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:206
+msgid "`textwrap <http://docs.python.org/lib/module-textwrap.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:206
+msgid "Standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:208
+msgid ":ref:`article-text-processing`"
+msgstr ""
+
+#: ../../src/PyMOTW/textwrap/index.rst:209
+msgid "More tools for working with text."
+msgstr ""
+

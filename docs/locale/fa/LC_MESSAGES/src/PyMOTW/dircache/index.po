@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/dircache/index.rst:3
+msgid "dircache -- Cache directory listings"
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:8
+msgid ""
+"Cache directory listings, updating when the modification time of a "
+"directory changes."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:9
+msgid "1.4 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:12
+msgid "Listing Directory Contents"
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:14
+msgid ""
+"The main function in the :mod:`dircache` API is :func:`listdir`, a "
+"wrapper around :func:`os.listdir` that caches the results and returns the"
+" same :class:`list` each time it is called with a given path, unless the "
+"modification date of the named directory changes."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:23
+msgid ""
+"It is important to recognize that the exact same :class:`list` is "
+"returned each time, so it should not be modified in place."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:40
+msgid "If the contents of the directory changes, it is rescanned."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:46
+msgid "In this case the new file causes a new :class:`list` to be constructed."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:63
+msgid ""
+"It is also possible to reset the entire cache, discarding its contents so"
+" that each path will be rechecked."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:70
+msgid "After resetting, a new :class:`list` instance is returned."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:88
+msgid "Annotated Listings"
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:90
+msgid ""
+"The other interesting function provided by the dircache module is "
+":func:`annotate`.  When called, :func:`annotate` modifies a :func:`list` "
+"such as is returned by :func:`listdir`, adding a ``'/'`` to the end of "
+"the names that represent directories."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:99
+msgid ""
+"Unfortunately for Windows users, although :func:`annotate` uses "
+":func:`os.path.join` to construct names to test, it always appends a "
+"``'/'``, not :data:`os.sep`."
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:138
+msgid "`dircache <http://docs.python.org/library/dircache.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/dircache/index.rst:139
+msgid "The standard library documentation for this module."
+msgstr ""
+

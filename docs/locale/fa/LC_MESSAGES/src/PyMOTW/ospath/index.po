@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/ospath/index.rst:3
+msgid "os.path -- Platform-independent manipulation of file names."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:8
+msgid "Parse, build, test, and otherwise work on file names and paths."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:9
+msgid "1.4 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:11
+msgid ""
+"Writing code to work with files on multiple platforms is easy using the "
+"functions included in the :mod:`os.path` module. Even programs not "
+"intended to be ported between platforms should use :mod:`os.path` for "
+"reliable filename parsing."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:17
+msgid "Parsing Paths"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:19
+msgid ""
+"The first set of functions in os.path can be used to parse strings "
+"representing filenames into their component parts. It is important to "
+"realize that these functions do not depend on the paths actually "
+"existing; they operate solely on the strings."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:24
+msgid "Path parsing depends on a few variable defined in :mod:`os`:"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:26
+msgid ""
+"``os.sep`` - The separator between portions of the path (e.g., \"``/``\" "
+"or \"``\\``\")."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:29
+msgid ""
+"``os.extsep`` - The separator between a filename and the file "
+"\"extension\" (e.g., \"``.``\")."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:32
+msgid ""
+"``os.pardir`` - The path component that means traverse the directory tree"
+" up one level (e.g., \"``..``\")."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:35
+msgid ""
+"``os.curdir`` - The path component that refers to the current directory "
+"(e.g., \"``.``\")."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:38
+msgid ""
+"``split()`` breaks the path into 2 separate parts and returns the tuple. "
+"The second element is the last component of the path, and the first "
+"element is everything that comes before it."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:62
+msgid ""
+"``basename()`` returns a value equivalent to the second part of the "
+"``split()`` value."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:85
+msgid "``dirname()`` returns the first part of the split path:"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:107
+msgid ""
+"``splitext()`` works like ``split()`` but divides the path on the "
+"extension separator, rather than the directory separator."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:130
+msgid ""
+"``commonprefix()`` takes a list of paths as an argument and returns a "
+"single string that represents a common prefix present in all of the "
+"paths. The value may represent a path that does not actually exist, and "
+"the path separator is not included in the consideration, so the prefix "
+"might not stop on a separator boundary."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:140
+msgid ""
+"In this example the common prefix string is ``/one/two/three``, even "
+"though one path does not include a directory named ``three``."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:157
+msgid "Building Paths"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:159
+msgid ""
+"Besides taking existing paths apart, you will frequently need to build "
+"paths from other strings."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:162
+msgid "To combine several path components into a single value, use ``join()``:"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:182
+msgid ""
+"It's also easy to work with paths that include \"variable\" components "
+"that can be expanded automatically. For example, ``expanduser()`` "
+"converts the tilde (``~``) character to a user's home directory."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:204
+msgid ""
+"``expandvars()`` is more general, and expands any shell environment "
+"variables present in the path."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:224
+msgid "Normalizing Paths"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:226
+msgid ""
+"Paths assembled from separate strings using ``join()`` or with embedded "
+"variables might end up with extra separators or relative path components."
+" Use ``normpath()`` to clean them up:"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:248
+msgid ""
+"To convert a relative path to a complete absolute filename, use "
+"``abspath()``."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:271
+msgid "File Times"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:273
+msgid ""
+"Besides working with paths, os.path also includes some functions for "
+"retrieving file properties, which can be more convenient than calling "
+"``os.stat()``:"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:298
+msgid "Testing Files"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:300
+msgid ""
+"When your program encounters a path name, it often needs to know whether "
+"the path refers to a file or directory. If you are working on a platform "
+"that supports it, you may need to know if the path refers to a symbolic "
+"link or mount point. You will also want to test whether the path exists "
+"or not.  :mod:`os.path` provides functions to test all of these "
+"conditions."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:363
+msgid "Traversing a Directory Tree"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:365
+msgid ""
+"``os.path.walk()`` traverses all of the directories in a tree and calls a"
+" function you provide passing the directory name and the names of the "
+"contents of that directory. This example produces a recursive directory "
+"listing, ignoring ``.svn`` directories."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:397
+msgid "`os.path <http://docs.python.org/lib/module-os.path.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:397
+msgid "Standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:400
+msgid ":mod:`os`"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:400
+msgid "The os module is a parent of os.path."
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:402
+msgid ":ref:`article-file-access`"
+msgstr ""
+
+#: ../../src/PyMOTW/ospath/index.rst:403
+msgid "Other tools for working with files."
+msgstr ""
+

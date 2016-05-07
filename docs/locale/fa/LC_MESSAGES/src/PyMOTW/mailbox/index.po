@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/mailbox/index.rst:3
+msgid "mailbox -- Access and manipulate email archives"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:8
+msgid "Work with email messages in various local file formats."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:9
+msgid "1.4 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:11
+msgid ""
+"The :mod:`mailbox` module defines a common API for accessing email "
+"messages stored in local disk formats, including:"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:14 ../../src/PyMOTW/mailbox/index.rst:142
+msgid "Maildir"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:15 ../../src/PyMOTW/mailbox/index.rst:25
+msgid "mbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:16
+msgid "MH"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:17
+msgid "Babyl"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:18
+msgid "MMDF"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:20
+msgid ""
+"There are base classes for :class:`Mailbox` and :class:`Message`, and "
+"each mailbox format includes a corresponding pair of subclasses to "
+"implement the details for that format."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:27
+msgid ""
+"The mbox format is the simplest to illustrate in documentation, since it "
+"is entirely plain text.  Each mailbox is stored as a single file, with "
+"all of the messages concatenated together.  Each time a line starting "
+"with \"From \" (``From`` followed by a single space) is encountered it is"
+" treated as the beginning of a new message.  Any time those characters "
+"appear at the beginning of a line in the message body, they are escaped "
+"by prefixing the line with \"``>``\"."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:36
+msgid "Creating an mbox mailbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:38
+msgid ""
+"Instantiate the ``email.mbox`` class by passing the filename to the "
+"constructor.  If the file does not exist, it is created when you add "
+"messages to it using ``add()``."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:46
+msgid "The result of this script is a new mailbox file with 2 email messages."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:78
+msgid "Reading an mbox Mailbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:80
+msgid ""
+"To read an existing mailbox, open it and treat the mbox object like a "
+"dictionary.  They keys are arbitrary values defined by the mailbox "
+"instance and are not necessary meaningful other than as internal "
+"identifiers for message objects."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:89
+msgid ""
+"You can iterate over the open mailbox but notice that, unlike with "
+"dictionaries, the default iterator for a mailbox works on the *values* "
+"instead of the *keys*."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:107
+msgid "Removing Messages from an mbox Mailbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:109
+msgid ""
+"To remove an existing message from an mbox file, use its key with "
+"``remove()`` or use ``del``."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:116
+msgid ""
+"Notice the use of ``lock()`` and ``unlock()`` to prevent issues from "
+"simultaneous access to the file, and ``flush()`` to force the changes to "
+"be written to disk."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:144
+msgid ""
+"The Maildir format was created to eliminate the problem of concurrent "
+"modification to an mbox file.  Instead of using a single file, the "
+"mailbox is organized as directory where each message is contained in its "
+"own file.  This also allows mailboxes to be nested, and so the API for a "
+"Maildir mailbox is extended with methods to work with sub-folders."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:152
+msgid "Creating a Maildir Mailbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:154
+msgid ""
+"The only real difference between using a Maildir and mbox is that to "
+"instantiate the ``email.Maildir`` object we need to pass the directory "
+"containing the mailbox to the constructor.  As before, if it does not "
+"exist, the mailbox is created when you add messages to it using "
+"``add()``."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:164
+msgid ""
+"Since we have added messages to the mailbox, they go to the \"new\" "
+"subdirectory.  Once they are \"read\" a client could move them to the "
+"\"cur\" subdirectory."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:169
+msgid ""
+"Although it is safe to write to the same maildir from multiple processes,"
+" ``add()`` is not thread-safe, so make sure you use a semaphore or other "
+"locking device to prevent simultaneous modifications to the mailbox from "
+"multiple threads of the same process."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:218
+msgid "Reading a Maildir Mailbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:220
+msgid "Reading from an existing Maildir mailbox works just like with mbox."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:226
+msgid ""
+"Notice that the messages are not guaranteed to be read in any particular "
+"order."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:244
+msgid "Removing Messages from a Maildir Mailbox"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:246
+msgid ""
+"To remove an existing message from a Maildir mailbox, use its key with "
+"``remove()`` or use ``del``."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:286
+msgid "Maildir folders"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:288
+msgid ""
+"Subdirectories or *folders* of a Maildir mailbox can be managed directly "
+"through the methods of the Maildir class.  Callers can list, retrieve, "
+"create, and remove sub-folders for a given mailbox."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:296
+msgid ""
+"The directory name for the folder is constructed by prefixing the folder "
+"name with ``.``."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:366
+msgid "Other Formats"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:368
+msgid ""
+"MH is another multi-file mailbox format used by some mail handlers. Babyl"
+" and MMDF are single-file formats with different message separators than "
+"mbox.  None seem to be as popular as mbox or Maildir. The single-file "
+"formats support the same API as mbox, and MH includes the folder-related "
+"methods found in the Maildir class."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:377
+msgid "`mailbox <http://docs.python.org/library/mailbox.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:377
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:380
+msgid "mbox manpage from qmail"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:380
+msgid "http://www.qmail.org/man/man5/mbox.html"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:383
+msgid "maildir manpage from qmail"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:383
+msgid "http://www.qmail.org/man/man5/maildir.html"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:386
+msgid ":mod:`email`"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:386
+msgid "The email module."
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:388
+msgid ":mod:`mhlib`"
+msgstr ""
+
+#: ../../src/PyMOTW/mailbox/index.rst:389
+msgid "The mhlib module."
+msgstr ""
+

@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/tempfile/index.rst:3
+msgid "tempfile -- Create temporary filesystem resources."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:8
+msgid "Create temporary filesystem resources."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:9
+msgid "Since 1.4 with major security revisions in 2.3"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:11
+msgid ""
+"Many programs need to create files to write intermediate data. Creating "
+"files with unique names securely, so they cannot be guessed by someone "
+"wanting to break the application, is challenging. The :mod:`tempfile` "
+"module provides several functions for creating filesystem resources "
+"securely. :func:`TemporaryFile()` opens and returns an un-named file, "
+":func:`NamedTemporaryFile()` opens and returns a named file, and "
+":func:`mkdtemp()` creates a temporary directory and returns its name."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:21
+msgid "TemporaryFile"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:23
+msgid ""
+"If your application needs a temporary file to store data, but does not "
+"need to share that file with other programs, the best option for creating"
+" the file is the :func:`TemporaryFile()` function. It creates a file, and"
+" on platforms where it is possible, unlinks it immediately. This makes it"
+" impossible for another program to find or open the file, since there is "
+"no reference to it in the filesystem table. The file created by "
+":func:`TemporaryFile()` is removed automatically when it is closed."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:36
+msgid ""
+"This example illustrates the difference in creating a temporary file "
+"using a common pattern for making up a name, versus using the "
+":func:`TemporaryFile()` function. Notice that the file returned by "
+":func:`TemporaryFile` has no name."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:59
+msgid ""
+"By default, the file handle is created with mode ``'w+b'`` so it behaves "
+"consistently on all platforms and your program can write to it and read "
+"from it."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:67
+msgid ""
+"After writing, you have to rewind the file handle using :func:`seek()` in"
+" order to read the data back from it."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:82
+msgid ""
+"If you want the file to work in text mode, set *mode* to ``'w+t'`` when "
+"you create it:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:89
+msgid "The file handle treats the data as text:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:105
+msgid "NamedTemporaryFile"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:107
+msgid ""
+"There are situations, however, where having a named temporary file is "
+"important. If your application spans multiple processes, or even hosts, "
+"naming the file is the simplest way to pass it between parts of the "
+"application. The :func:`NamedTemporaryFile()` function creates a file "
+"with a name, accessed from the name attribute."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:117
+msgid ""
+"Even though the file is named, it is still removed after the handle is "
+"closed."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:135
+msgid "mkdtemp"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:137
+msgid ""
+"If you need several temporary files, it may be more convenient to create "
+"a single temporary directory and then open all of the files in that "
+"directory.  To create a temporary directory, use :func:`mkdtemp()`."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:146
+msgid ""
+"Since the directory is not \"opened\" per se, you have to remove it "
+"yourself when you are done with it."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:162
+msgid "Predicting Names"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:164
+msgid ""
+"For debugging purposes, it is useful to be able to include some "
+"indication of the origin of the temporary files. While obviously less "
+"secure than strictly anonymous temporary files, including a predictable "
+"portion in the name lets you find the file to examine it while your "
+"program is using it. All of the functions described so far take three "
+"arguments to allow you to control the filenames to some degree. Names are"
+" generated using the formula::"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:174
+msgid ""
+"where all of the values except random can be passed as arguments to "
+":func:`TemporaryFile()`, :func:`NamedTemporaryFile()`, and "
+":func:`mkdtemp()`. For example:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:182
+msgid ""
+"The *prefix* and *suffix* arguments are combined with a random string of "
+"characters to build the file name, and the *dir* argument is taken as-is "
+"and used as the location of the new file."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:200
+msgid "Temporary File Location"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:202
+msgid ""
+"If you don't specify an explicit destination using the *dir* argument, "
+"the actual path used for the temporary files will vary based on your "
+"platform and settings. The tempfile module includes two functions for "
+"querying the settings being used at runtime:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:211
+msgid ""
+":func:`gettempdir()` returns the default directory that will hold all of "
+"the temporary files and :func:`gettempprefix()` returns the string prefix"
+" for new file and directory names."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:228
+msgid ""
+"The value returned by :func:`gettempdir()` is set based on a "
+"straightforward algorithm of looking through a list of locations for the "
+"first place the current process can create a file. From the library "
+"documentation:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:233
+msgid ""
+"Python searches a standard list of directories and sets tempdir to the "
+"first one which the calling user can create files in. The list is:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:236
+msgid "The directory named by the ``TMPDIR`` environment variable."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:238
+msgid "The directory named by the ``TEMP`` environment variable."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:240
+msgid "The directory named by the ``TMP`` environment variable."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:242
+msgid "A platform-specific location:"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:244
+msgid ""
+"On RiscOS, the directory named by the ``Wimp$ScrapDir`` environment "
+"variable."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:247
+msgid ""
+"On Windows, the directories ``C:\\TEMP``, ``C:\\TMP``, ``\\TEMP``, and "
+"``\\TMP``, in that order."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:250
+msgid ""
+"On all other platforms, the directories ``/tmp``, ``/var/tmp``, and "
+"``/usr/tmp``, in that order."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:253
+msgid "As a last resort, the current working directory."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:255
+msgid ""
+"If your program needs to use a global location for all temporary files "
+"that you need to set explicitly but do not want to set through one of "
+"these environment variables, you can set ``tempfile.tempdir`` directly."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:279
+msgid "`tempfile <http://docs.python.org/lib/module-tempfile.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:279
+msgid "Standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:281
+msgid ":ref:`article-file-access`"
+msgstr ""
+
+#: ../../src/PyMOTW/tempfile/index.rst:282
+msgid "More modules for working with files."
+msgstr ""
+

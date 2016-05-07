@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/dbm/index.rst:3
+msgid "dbm -- Simple database interface"
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:8
+msgid "Provides an interface to the Unix (n)dbm library."
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:9
+msgid "1.4 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:11
+msgid ""
+"The :mod:`dbm` module provides an interface to one of the dbm libraries, "
+"depending on how the module was configured during compilation."
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:16
+msgid "Examples"
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:18
+msgid "The ``library`` attribute identifies the library being used, by name."
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:24
+msgid ""
+"Your results will depend on what library ``configure`` was able to find "
+"when the interpreter was built."
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:39
+msgid ""
+"The :func:`open()` function follows the same semantics as the "
+":mod:`anydbm` module."
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:45
+msgid "`dbm <http://docs.python.org/library/dbm.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:45
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:47
+msgid ":mod:`anydbm`"
+msgstr ""
+
+#: ../../src/PyMOTW/dbm/index.rst:48
+msgid "The :mod:`anydbm` module."
+msgstr ""
+

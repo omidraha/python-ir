@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/cgitb/index.rst:3
+msgid "cgitb -- Detailed traceback reports"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:8
+msgid "cgitb provides more detailed traceback information than :mod:`traceback`."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:9
+msgid "2.2 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:11
+msgid ""
+":mod:`cgitb` was originally designed for showing errors and debugging "
+"information in web applications.  It was later updated to include plain-"
+"text output as well, but unfortunately wasn't renamed.  This has led to "
+"obscurity and the module is not used as often as it should be. "
+"Nonetheless, :mod:`cgitb` is a valuable debugging tool in the standard "
+"library."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:19
+msgid "Standard Traceback Dumps"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:21
+msgid ""
+"Python's default exception handling behavior is to print a *traceback* to"
+" standard error with the call stack leading up to the error position.  "
+"This basic output frequently contains enough information to understand "
+"the cause of the exception and permit a fix."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:30
+msgid "The above sample program has a subtle error in :func:`func3()`."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:54
+msgid "Enabling Detailed Tracebacks"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:56
+msgid ""
+"While the basic traceback includes enough information for us to spot the "
+"error, enabling cgitb replaces ``sys.excepthook`` with a function that "
+"gives extended tracebacks with even more detail."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:64
+msgid ""
+"As you can see below, the error report is much more extensive.  Each "
+"frame of the stack is listed, along with:"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:67
+msgid "the full path to the source file, instead of just the base name"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:68
+msgid "the values of the arguments to each function in the stack"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:69
+msgid "a few lines of source context from around the line in the error path"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:70
+msgid "the values of variables in the expression causing the error"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:163
+msgid ""
+"The end of the output also includes the full details of the exception "
+"object (in case it has attributes other than ``message`` that would be "
+"useful for debugging) and the original form of a traceback dump."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:168
+msgid "Local Variables in Tracebacks"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:170
+msgid ""
+"Having access to the variables involved in the error stack can help find "
+"a logical error that occurs somewhere higher in the stack than the line "
+"where the actual exception is generated."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:178
+msgid ""
+"In the case of this code with a :ref:`ZeroDivisionError <exceptions-"
+"ZeroDivisionError>`, we can see that the problem is introduced in the "
+"computation of the value of ``c`` in ``func1()``, rather than where the "
+"value is used in ``func2()``."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:264
+msgid ""
+"The code in :mod:`cgitb` that examines the variables used in the stack "
+"frame leading to the error is smart enough to evaluate object attributes "
+"to display them, too."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:272
+msgid ""
+"Here we see that ``self.a`` and ``self.b`` are involved in the error-"
+"prone code."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:351
+msgid "Adding More Context"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:353
+msgid ""
+"Suppose your function includes a lot of inline comments, whitespace, or "
+"other code that makes it very long.  Having the default of 5 lines of "
+"context may not be enough help in that case, if the body of the function "
+"is pushed out of the code window displayed.  Using a larger context value"
+" when enabling cgitb gets around this."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:363
+msgid ""
+"You can pass *context* to :func:`enable()` to control the amount of code "
+"displayed for each line of the traceback."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:447
+msgid ""
+"Increasing the value gets us enough of the function that we can spot the "
+"problem in the code, again."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:548
+msgid "Exception Properties"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:550
+msgid ""
+"In addition to the local variables from each stack frame, :mod:`cgitb` "
+"shows all properties of the exception object.  If you have a custom "
+"exception type with extra properties, they are printed as part of the "
+"error report."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:559
+msgid ""
+"In this example, the *bad_value* property is included along with the "
+"standard *message* and *args* values."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:627
+msgid "Logging Tracebacks"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:629
+msgid ""
+"For many situations, printing the traceback details to standard error is "
+"the best resolution.  In a production system, however, logging the errors"
+" is even better.  :func:`enable()` includes an optional argument, "
+"*logdir*, to enable error logging.  When a directory name is provided, "
+"each exception is logged to its own file in the given directory."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:640
+msgid ""
+"Even though the error display is suppressed, a message is printed "
+"describing where to go to find the error log."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:739
+msgid "HTML Output"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:741
+msgid ""
+"Because :mod:`cgitb` was originally developed for handling exceptions in "
+"web apps, no discussion would be complete without an example of the HTML "
+"output it produces."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:749
+msgid ""
+"By leaving out the *format* argument (or specifying ``html``), the "
+"traceback format changes to HTML output."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:758
+msgid "`cgitb <http://docs.python.org/library/cgitb.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:758
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:761
+msgid ":mod:`traceback`"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:761
+msgid "Standard library module for working with tracebacks."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:765
+msgid ":mod:`inspect`"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:764
+msgid "The inspect module includes more functions for examining the stack."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:770
+msgid ":mod:`sys`"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:768
+msgid ""
+"The sys module provides access to the current exception value and the "
+"``excepthook`` handler invoked when an exception occurs."
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:773
+msgid ""
+"`Improved traceback module "
+"<http://thread.gmane.org/gmane.comp.python.devel/110326>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/cgitb/index.rst:773
+msgid ""
+"Python-dev discussion of improvements to the traceback module and related"
+" enhancements other developers use locally."
+msgstr ""
+

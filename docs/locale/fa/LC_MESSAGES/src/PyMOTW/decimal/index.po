@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Python-ir.org
+# This file is distributed under the same license as the Python-ir package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Python-ir 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../src/PyMOTW/decimal/index.rst:3
+msgid "decimal -- Fixed and floating point math"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:8
+msgid "Decimal arithmetic using fixed and floating point numbers"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:9
+msgid "2.4 and later"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:11
+msgid ""
+"The :mod:`decimal` module implements fixed and floating point arithmetic "
+"using the model familiar to most people, rather than the IEEE floating "
+"point version implemented by most computer hardware.  A Decimal instance "
+"can represent any number exactly, round up or down, and apply a limit to "
+"the number of significant digits."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:18
+msgid "Decimal"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:20
+msgid ""
+"Decimal values are represented as instances of the :class:`Decimal` "
+"class.  The constructor takes as argument an integer, or a string. "
+"Floating point numbers must be converted to a string before being used to"
+" create a :class:`Decimal`, letting the caller explicitly deal with the "
+"number of digits for values that cannot be expressed exactly using "
+"hardware floating point representations."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:31
+msgid ""
+"Notice that the floating point value of ``0.1`` is not represented as an "
+"exact value, so the representation as a float is different from the "
+"Decimal value."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:51
+msgid ""
+"Less conveniently, Decimals can also be created from tuples containing a "
+"sign flag (``0`` for positive, ``1`` for negative), a tuple of digits, "
+"and an integer exponent."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:74
+msgid "Arithmetic"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:76
+msgid ""
+"Decimal overloads the simple arithmetic operators so once you have a "
+"value you can manipulate it in much the same way as the built-in numeric "
+"types."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:84
+msgid ""
+"Decimal operators also accept integer arguments, but floating point "
+"values must be converted to Decimal instances."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:116
+msgid "Logarithms"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:118
+msgid ""
+"Beyond basic arithmetic, Decimal includes methods to find the base 10 and"
+" natural logarithms."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:142
+msgid "Special Values"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:144
+msgid ""
+"In addition to the expected numerical values, :class:`Decimal` can "
+"represent several special values, including positive and negative values "
+"for infinity, \"not a number\", and zero."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:152
+msgid ""
+"Adding to infinite values returns another infinite value.  Comparing for "
+"equality with NaN always returns False and comparing for inequality "
+"always returns true.  Comparing for sort order against NaN is undefined "
+"and results in an error."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:178
+msgid "Context"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:180
+msgid ""
+"So far all of the examples have used the default behaviors of the decimal"
+" module. It is possible to override settings such as the precision "
+"maintained, how rounding is performed, error handling, etc. All of these "
+"settings are maintained via a *context*.  Contexts can be applied for all"
+" Decimal instances in a thread or locally within a small code region."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:188
+msgid "Current Context"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:190
+msgid "To retrieve the current global context, use ``getcontext()``."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:210
+msgid "Precision"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:212
+msgid ""
+"The *prec* attribute of the context controls the precision maintained for"
+" new values created as a result of arithmetic.  Literal values are "
+"maintained as described."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:237
+msgid "Rounding"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:239
+msgid ""
+"There are several options for rounding to keep values within the desired "
+"precision."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:243
+msgid "ROUND_CEILING"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:243
+msgid "Always round upwards towards infinity."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:246
+msgid "ROUND_DOWN"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:246
+msgid "Always round toward zero."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:249
+msgid "ROUND_FLOOR"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:249
+msgid "Always round down towards negative infinity."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:253
+msgid "ROUND_HALF_DOWN"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:252
+msgid ""
+"Rounds away from zero if the last significant digit is greater than or "
+"equal to 5, otherwise toward zero."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:258
+msgid "ROUND_HALF_EVEN"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:256
+msgid ""
+"Like ROUND_HALF_DOWN except that if the value is 5 then the preceding "
+"digit is examined.  Even values cause the result to be rounded down and "
+"odd digits cause the result to be rounded up."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:262
+msgid "ROUND_HALF_UP"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:261
+msgid ""
+"Like ROUND_HALF_DOWN except if the last significant digit is 5 the value "
+"is rounded away from zero."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:265
+msgid "ROUND_UP"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:265
+msgid "Round away from zero."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:269
+msgid "ROUND_05UP"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:268
+msgid ""
+"Round away from zero if the last digit is ``0`` or ``5``, otherwise "
+"towards zero."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:311
+msgid "Local Context"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:313
+msgid ""
+"Using Python 2.5 or later you can also apply the context to a subset of "
+"your code using the ``with`` statement and a context manager."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:337
+msgid "Per-Instance Context"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:339
+msgid ""
+"Contexts can be used to construct Decimal instances, applying the "
+"precision and rounding arguments to the conversion from the input type.  "
+"This lets your application select the precision of constant values "
+"separately from the precision of user data."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:360
+msgid "Threads"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:362
+msgid ""
+"The \"global\" context is actually thread-local, so each thread can "
+"potentially be configured using different values."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:388
+msgid "`decimal <http://docs.python.org/library/decimal.html>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:388
+msgid "The standard library documentation for this module."
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:390
+msgid "`Wikipedia: Floating Point <http://en.wikipedia.org/wiki/Floating_point>`_"
+msgstr ""
+
+#: ../../src/PyMOTW/decimal/index.rst:391
+msgid "Article on floating point representations and arithmetic."
+msgstr ""
+
