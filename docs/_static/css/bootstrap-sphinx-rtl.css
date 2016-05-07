@@ -5,3 +5,14 @@ div.highlight {
 footer {
     direction: ltr !important;
 }
+
+code {
+    direction: ltr !important;
+    display: inline-block;
+}
+
+kbd {
+    direction: ltr !important;
+    display: inline-block;
+}
+
