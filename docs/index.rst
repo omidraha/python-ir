@@ -15,6 +15,7 @@ Python-ir.org
    :maxdepth: 3
 
    src/index/index
+   src/PyMOTW/contents
 
 
 فهرست
