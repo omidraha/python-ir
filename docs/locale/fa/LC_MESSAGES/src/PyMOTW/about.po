@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Python-ir.org
 # This file is distributed under the same license as the Python-ir package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# or <or@omidraha.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 20:31+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-07 22:34+0330\n"
+"Last-Translator: or <or@omidraha.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../../src/PyMOTW/about.rst:3
 msgid "About Python Module of the Week"
-msgstr ""
+msgstr "درباره ماژول پایتون این هفته"
 
 #: ../../src/PyMOTW/about.rst:5
 msgid ""
@@ -29,6 +31,11 @@ msgid ""
 "is building a set of example code for the modules in the `Python "
 "<http://www.python.org/>`_ standard library."
 msgstr ""
+"ماژول پایتون این هفته یا به اختصار PyMOTW شامل یک مجموعه از مطالب بلاگی ست که "
+"توسط  `Doug Hellmann  <http://www.doughellmann.com/>`_  نوشته شده است. که در "
+"واقع در ابتدا برای ایجاد عادت نوشتن چیزی به طور منظم شروع شده بود. تمرکز این "
+"مجموعه بر روی ایجاد یک مجموعه از مثال ها  برای ماژول های کتابخانه استاندارد  "
+"`پایتون  <http://www.python.org/>`_  می باشد."
 
 #: ../../src/PyMOTW/about.rst:11
 msgid ""
@@ -36,16 +43,21 @@ msgid ""
 "updates and the latest release.  Source code is available from "
 "http://bitbucket.org/dhellmann/pymotw/."
 msgstr ""
+"صفحه خانگی این پروژه را برای بروز رسانی ها و آخرین انتشارها در آدرس  "
+"http://www.doughellmann.com/PyMOTW/ مشاهده نمائید. سورس کد این پروژه نیز در "
+"آدرس http://bitbucket.org/dhellmann/pymotw/ در دسترس می باشد."
 
 #: ../../src/PyMOTW/about.rst:15
 msgid ""
 "Complete documentation for the standard library can be found on the "
 "Python web site at http://docs.python.org/library/."
 msgstr ""
+"مستندات کامل کتابخانه استاندارد پایتون را می توانید بر روی وب سایت پایتون به "
+"نشانی http://docs.python.org/library/ مشاهده نمائید."
 
 #: ../../src/PyMOTW/about.rst:19
 msgid "Tools"
-msgstr ""
+msgstr "ابزارها"
 
 #: ../../src/PyMOTW/about.rst:21
 msgid ""
@@ -53,10 +65,13 @@ msgid ""
 "<http://docutils.sourceforge.net/>`_ and the HTML and PDF output are "
 "created using `Sphinx <http://sphinx.pocoo.org/>`_."
 msgstr ""
+"متن سورس  PyMOTW بر مبنای `reStructuredText <http://docutils.sourceforge.net/>"
+"`_  می باشد و  خروجی  HTML  و  PDF  آن با استفاده از `Sphinx <"
+"http://sphinx.pocoo.org/>`_ ایجاد شده است."
 
 #: ../../src/PyMOTW/about.rst:26
 msgid "Subscribe"
-msgstr ""
+msgstr "اشتراک"
 
 #: ../../src/PyMOTW/about.rst:28
 msgid ""
@@ -65,10 +80,15 @@ msgid ""
 "http://feeds.doughellmann.com/PyMOTW and `email "
 "<http://feedburner.google.com/fb/a/mailverify?uri=PyMOTW&amp;loc=en_US>`_."
 msgstr ""
+"مادامی که مقاله های جدیدی نوشته بشود، آن ها در بلاگ من "
+"(http://blog.doughellmann.com) منتشر خواهند شد. بروز رسانی ها نیز از طریق "
+"خوراک خوان در آدرس http://feeds.doughellmann.com/PyMOTW  و `email <"
+"http://feedburner.google.com/fb/a/mailverify?uri=PyMOTW&amp;loc=en_US>`_ در "
+"دسترس خواهند بود."
 
 #: ../../src/PyMOTW/about.rst:36
 msgid "The motw Command Line Interface"
-msgstr ""
+msgstr "واسط خط فرمان motw"
 
 #: ../../src/PyMOTW/about.rst:38
 msgid ""
@@ -78,34 +98,38 @@ msgid ""
 "There are also options to view the articles in different formats (see the"
 " ``-h`` output for details)."
 msgstr ""
+"همچنین PyMOTW شامل یک برنامه خط فرمان به نام ``motw`` می باشد، در زمانی که "
+"شما در حال توسعه می باشید برای راحتی بیشتر  در دسترسی به مثال ها به سادگی "
+"دستور ``motw module`` را  برای باز شدن یک نسخه لوکال از متن  HTML  برای ماژول "
+"مورد نظر اجرا نمائید. "
 
 #: ../../src/PyMOTW/about.rst:44
 msgid "Usage: ``motw [options] <module_name>``"
-msgstr ""
+msgstr "طریقه استفاده: ``motw [options] <module_name>``"
 
 #: ../../src/PyMOTW/about.rst:46
 msgid "Options:"
-msgstr ""
+msgstr "گزینه ها:"
 
 #: ../../src/PyMOTW/about.rst:48
 msgid "show this help message and exit"
-msgstr ""
+msgstr "همین راهنما را نمایش می دهد و خارج می شود"
 
 #: ../../src/PyMOTW/about.rst:49
 msgid "Print plain-text version of help to stdout"
-msgstr ""
+msgstr "نسخه متنی از راهنما را در  stdout نمایش می دهد"
 
 #: ../../src/PyMOTW/about.rst:50
 msgid "Open HTML version of help from web"
-msgstr ""
+msgstr "نسخه  HTML از راهنما را از طریق وب باز می نماید"
 
 #: ../../src/PyMOTW/about.rst:51
 msgid "Open HTML version of help from installed file"
-msgstr ""
+msgstr "نسخه  HTML از راهنما را از روی فایل نصب شده باز می نماید"
 
 #: ../../src/PyMOTW/about.rst:56
 msgid "Using PyMOTW with the Interactive Interpreter"
-msgstr ""
+msgstr "استفاده از PyMOTW با مفسر تعاملی"
 
 #: ../../src/PyMOTW/about.rst:58
 msgid ""
@@ -115,14 +139,19 @@ msgid ""
 "see the help for an imported module.  Enclose the name in quotes for a "
 "module that you haven't already imported."
 msgstr ""
+"مادامی که شما در حال کار با مفسر تعاملی پایتون هستنید مقالات PyMOTW  نیز در "
+"اختیار شما هستند. با  import  کردن ماژول  ``PyMOTW`` تابع ``motw()`` به  فضای "
+"نام ``__builtins__`` اضافه می شود. از اینرو برای مشاهده راهنمای یک ماژول  "
+"import  شده دستور  ``motw(module)``  را اجرا نمائید. و در صورتی که ماژولی  "
+"import نشده است اسم آن را در داخل  نقل فول قرار بدهید."
 
 #: ../../src/PyMOTW/about.rst:80
 msgid "Translations and Other Versions"
-msgstr ""
+msgstr "ترجمه ها و سایر نسخه ها"
 
 #: ../../src/PyMOTW/about.rst:82
 msgid "`Chinese <http://www.vbarter.cn/pymotw/>`_"
-msgstr ""
+msgstr "`چینی <http://www.vbarter.cn/pymotw/>`_"
 
 #: ../../src/PyMOTW/about.rst:84
 msgid ""
@@ -130,10 +159,13 @@ msgid ""
 "called PyMOTWCN (http://code.google.com/p/pymotwcn/) and posted the "
 "completed translations at http://www.vbarter.cn/pymotw/."
 msgstr ""
+"آقای Junjie Cai (蔡俊杰) و Yan Sheng (盛艳)  پروژه ایی را در گوگل کد به نام "
+"PyMOTWCN (http://code.google.com/p/pymotwcn/)  آغاز نموده اند و نرجمه کامل  "
+"شده را در آدرس  http://www.vbarter.cn/pymotw/ قرار داده اند."
 
 #: ../../src/PyMOTW/about.rst:88
 msgid "`German <http://schoenian-online.de/pymotw.html>`_"
-msgstr ""
+msgstr "`آلمانی <http://schoenian-online.de/pymotw.html>`_"
 
 #: ../../src/PyMOTW/about.rst:90
 msgid ""
@@ -148,7 +180,7 @@ msgstr ""
 
 #: ../../src/PyMOTW/about.rst:98
 msgid "`Italian <http://robyp.x10hosting.com/>`_"
-msgstr ""
+msgstr "`ایتالیائی <http://robyp.x10hosting.com/>`_"
 
 #: ../../src/PyMOTW/about.rst:100
 msgid ""
@@ -160,7 +192,7 @@ msgstr ""
 
 #: ../../src/PyMOTW/about.rst:106
 msgid "`Spanish <http://denklab.org/articles/category/pymotw/>`_"
-msgstr ""
+msgstr "`اسپانیائی <http://denklab.org/articles/category/pymotw/>`_"
 
 #: ../../src/PyMOTW/about.rst:108
 msgid ""
@@ -176,7 +208,7 @@ msgstr ""
 
 #: ../../src/PyMOTW/about.rst:117
 msgid "`Japanese <http://www.doughellmann.com/PyMOTW-ja/>`_"
-msgstr ""
+msgstr "`ژاپنی <http://www.doughellmann.com/PyMOTW-ja/>`_"
 
 #: ../../src/PyMOTW/about.rst:119
 msgid ""
@@ -207,15 +239,16 @@ msgstr ""
 
 #: ../../src/PyMOTW/about.rst:143
 msgid "Other Contributors"
-msgstr ""
+msgstr "دیگر مشارکت کنند ها"
 
 #: ../../src/PyMOTW/about.rst:145
-msgid "Thank you to John Benediktsson for the original HTML-to-reST conversion."
+msgid ""
+"Thank you to John Benediktsson for the original HTML-to-reST conversion."
 msgstr ""
 
 #: ../../src/PyMOTW/copyright.rst:4
 msgid "Copyright and Licensing"
-msgstr ""
+msgstr "حق مؤلف"
 
 #: ../../src/PyMOTW/copyright.rst:6
 msgid ""
@@ -261,4 +294,5 @@ msgid ""
 "OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR "
 "PERFORMANCE OF THIS SOFTWARE."
 msgstr ""
+
 
