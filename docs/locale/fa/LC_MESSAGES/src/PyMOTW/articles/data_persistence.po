@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Python-ir.org
 # This file is distributed under the same license as the Python-ir package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# or <or@omidraha.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 20:31+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-09 21:16+0330\n"
+"Last-Translator: or <or@omidraha.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:5
 msgid "Data Persistence and Exchange"
-msgstr ""
+msgstr "تبادل و ماندگاری داده"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:7
 msgid ""
@@ -28,10 +30,14 @@ msgid ""
 "forth into a format for saving it, and working with the storage of the "
 "converted data."
 msgstr ""
+"پایتون چندین ماژول را برای ذخیره سازی داده ها ارائه می دهد. بطور کلی دو جنبه "
+"در ماندگاری داده وجود دارد: تبدیل شیء موجود در حافظه به یک فرمت قابل ذخیره "
+"سازی و آنگاه برگشت پذبر بودن آن فرمت به شیء حافظه، کار با storage ایی که داده "
+"ی تبدیل شده را در خود ذخیره کرده است. "
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:11
 msgid "Serializing Objects"
-msgstr ""
+msgstr "Serialize سازی اشیاء"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:13
 msgid ""
@@ -44,10 +50,19 @@ msgid ""
 "however, since it integrates better with some of the existing web service"
 " storage applications."
 msgstr ""
+"پایتون شامل دو ماژول به نام های  :mod:`pickle` و :mod:`json` است که قابلیت "
+"تبدیل اشیاء را به فرمت های قابل ذخیره سازی و قابل انتقال (*serialize سازی*) "
+"فراهم می سازد. معمولا استفاده از :mod:`pickle` رایج تر است، چرا که نسخه سریع "
+"تری از آن که با C پیاده سازی شده است نیز وجود دارد که با برخی دیگر از ماژول "
+"های استاندارد کتابخانه پایتون همچون  :mod:`shelve` که در واقع وظیفه ی ذخیره "
+"سازی داده های serialize شده را بر عهده دارد نیز سازگار است. همچنین برنامه های "
+"کاربردی تحت وب ممکن است تمایل بیشتری به کار با  :mod:`json` داشته باشند، چرا "
+"که ممکن است با دیگر برنامه های ذخیره سازی که تحت وب سرویس وجود دارند یکپارچه "
+"تر باشند."
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:17
 msgid "Storing Serialized Objects"
-msgstr ""
+msgstr "ذخیره سازی اشیاء serialize شده"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:19
 msgid ""
@@ -58,6 +73,12 @@ msgid ""
 "modules for storing key-value pairs in a simple database using one of the"
 " DBM format variants."
 msgstr ""
+"به مجرد آنکه یک شیء موجود در حافظه به فرمت قابل ذخیره شدن تبدیل گردید، مرحله "
+"ی بعدی آنست که بدانیم چگونه داده را می بایست ذخیره نمائیم. یک فایل ساده می "
+"تواند  اشیاء serialize شده را یکی پس از دیگری برای داده هایی که نیازی به "
+"ایندکس گذاری ندارند ذخیره نماید، اما پایتون شامل مجموعه ایی از ماژول هایی ست "
+"که می تواند برای ذخیره سازی جفت های کیلد-مقدار در یک پایگاه داده ساده به یکی "
+"از فرمت های متنوع DBM به کار رود."
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:21
 msgid ""
@@ -66,6 +87,10 @@ msgid ""
 "dictionary-like API.  Objects saved to the shelve are automatically "
 "pickled and saved without any extra work on your part."
 msgstr ""
+"ساده ترین واسط برای داشتن مزیت های فرمت DBM توسط ماژول :mod:`shelve` فراهم می "
+"شود. به سادگی یک فایل shelve را باز نمائید و به آن از طریق یک API شبه دیکشنری "
+"دسترسی پیدا کنید. اشیای ذخیره شده در shelve بصورت خودکار pickle شده اند و از "
+"این رو دیگر نیازی به زحمت اضافی وجود ندارد."
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:23
 msgid ""
@@ -76,6 +101,12 @@ msgid ""
 " in the module to ensure a specific format is selected (:ref:`shelve-"
 "shelf-types`)."
 msgstr ""
+"اما  یکی از موانع shelve در این است که با واسط پیش فرض آن نمی توانید تضمین "
+"کنید که کدام فرمت از DBM استفاده خواهد شد، البته اگر برنامه کاربردی شما نیازی "
+"به اشتراک گذاری فایل های پایگاه داده ی خود با هاست هایی با کتابخانه های "
+"متفاوت نداشته باشد این مسئله برای شما اهمیت چندانی نخواهد داشت، اما در صورت "
+"نیاز چنین موردی شما می توانید برای اطمینان از یکی از کلاس هایی که در این "
+"ماژول وجود دارند استفاده کنید. (:ref:`shelve-shelf-types`)"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:25
 msgid ""
@@ -85,10 +116,15 @@ msgid ""
 "objects won't be automatically re-created when you access the value in "
 "the database."
 msgstr ""
+"در صورتی که می خواهید داده های زیادی را با json رد و بدل نمائید، استفاده از  "
+":mod:`json` و  :mod:`anydbm` می تواند مکانیسم ماندگاری دیگری را برای داده های "
+"شما فراهم آورد. از آنجایی که کلید و مقدارهای پایگاه داده ی DBM می بایست تنها "
+"string باشند، از این رو زمانی که به مقداری در پایگاه داده دسترسی پیدا می کنید "
+"اشیاء نمی توانند بطور خودکار  بازسازی شوند."
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:29
 msgid "Relational Databases"
-msgstr ""
+msgstr "پایگاه های داده ی رابطه ایی"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:31
 msgid ""
@@ -99,6 +135,12 @@ msgid ""
 " well suited for embedding in desktop applications or development "
 "versions of web apps."
 msgstr ""
+":mod:`sqlite3` که یک پایگاه داده ی رابطه ایی است با اغلب توزیع های پایتون در "
+"دسترس می باشد. Sqlite پایگاه داده اش را در حافظه و یا در یک فایل ذخیره می کند "
+"و تمام دسترسی ها از طریق یک process یکسان انجام می شود، از اینرو تاخیر شبکه "
+"ایی وجود نخواهد داشت. همچنین ماهیت جمع و جور  :mod:`sqlite3` ، مخصوصا باعث می "
+"شود که برای برنامه های کاربردی تحت desktop و یا برای نسخه های در حال توسعه از "
+"برنامه های کاربردی تحت وب بسیار مناسب باشد."
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:33
 msgid ""
@@ -110,10 +152,18 @@ msgid ""
 "complicated and you are worried about overhead, you may want to use the "
 "DBI interface directly."
 msgstr ""
+"تمام دسترسی ها به این پایگاه داده بر مبنای API معرفی شده بعنوان Python DBI "
+"2.0 انجام می شود و بطور پیش فرض ORM (object relational mapper)  ایی را برای "
+"آن شامل نمی شود. از معروف ترین ORM های قابل استفاده می توان به   `SQLAlchemy "
+"<http://www.sqlalchemy.org/>`_  اشاره کرد، همچنین دیگر ORM ها همچون ORM فریم "
+"ورک Django نیز Sqlite را پشتیبانی می نماید. ماژول SQLAlchemy به آسانی قابل "
+"نصب و استفاده می باشد، اما در صورتی که اشیاء شما پیچیدگی زیادی ندارند و نگران "
+"سربار اضافی هستید ممکن است بهتر باشد که بطور مستقیم از همان واسط DBI استفاده "
+"نمائید. "
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:37
 msgid "Data Exchange Through Standard Formats"
-msgstr ""
+msgstr "تبادل داده از طریق فرمت های استاندارد"
 
 #: ../../src/PyMOTW/articles/data_persistence.rst:39
 msgid ""
@@ -124,4 +174,10 @@ msgid ""
 "frequently the simplest way to move data out of your application and into"
 " an analysis tool."
 msgstr ""
+"اگرچه فایل های  :mod:`csv` معمولا بعنوان فرمت ماندگار در نظر گرفته نمی شوند، "
+"اما این فایل ها می توانند بطور موثری داده ها را بین برنامه ها مهاجرت دهند. از "
+"این رو اغلب برنامه های spreadsheet و پایگاه داده ها از import و export داده "
+"ها بصورت CSV پشتیبانی می نمایند، و غالبا dump داده ها در یک فایل CSV ساده "
+"ترین راه برای انتقال داده از یک برنامه به یک ابزار آنالایز گر می باشد."
+
 
