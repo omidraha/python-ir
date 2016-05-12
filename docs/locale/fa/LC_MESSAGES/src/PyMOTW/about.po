@@ -239,7 +239,7 @@ msgstr ""
 
 #: ../../src/PyMOTW/about.rst:143
 msgid "Other Contributors"
-msgstr "دیگر مشارکت کنند ها"
+msgstr "دیگر مشارکت کننده ها"
 
 #: ../../src/PyMOTW/about.rst:145
 msgid ""
