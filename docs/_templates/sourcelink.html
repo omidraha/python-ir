@@ -1,0 +1,7 @@
+{%- if show_source and has_source and sourcename %}
+    {%- if edit_on_github_url %}
+        <p>
+            <a href="{{ edit_on_github_url }}" rel="nofollow">{{ _('Edit Page') }}</a>
+        </p>
+    {%- endif %}
+{%- endif %}

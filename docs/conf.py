@@ -30,6 +30,8 @@ import os
 # ones.
 import sphinx_bootstrap_theme
 
+sys.path.insert(0, os.path.abspath('_ext'))
+
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
@@ -37,7 +39,12 @@ extensions = [
     'sphinx.ext.todo',
     # 'sphinx.ext.coverage',
     # 'sphinx.ext.mathjax',
+    'edit_on_github',
 ]
+
+# Edit on github extension
+edit_on_github_project = 'omidraha/python-ir'
+edit_on_github_branch = 'master/docs/locale/fa/LC_MESSAGES'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
