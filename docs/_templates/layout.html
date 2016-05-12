@@ -16,6 +16,17 @@
     </script>
 {% endblock %}
 
+{%- block header %}
+    {{ super() }}
+    {%- if show_source and has_source and sourcename %}
+        {%- if edit_on_github_url %}
+            <p>
+                <a href="{{ edit_on_github_url }}"><img style="position: absolute; top: 50px; left: 0; border: 0;" src="{{ pathto('_static/image/edit_page.png' , 1) }}" alt="Fork me on GitHub" rel="nofollow"></a>
+            </p>
+        {%- endif %}
+    {%- endif %}
+{% endblock %}
+
 {% block footer %}
     {{ super() }}
     <p class="text-center">
