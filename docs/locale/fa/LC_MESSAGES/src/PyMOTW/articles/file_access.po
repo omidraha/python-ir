@@ -1,35 +1,39 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Python-ir.org
 # This file is distributed under the same license as the Python-ir package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# or <or@omidraha.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 20:31+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-13 03:06+0330\n"
+"Last-Translator: or <or@omidraha.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../../src/PyMOTW/articles/file_access.rst:5
 msgid "File Access"
-msgstr ""
+msgstr "دسترسی به فایل"
 
 #: ../../src/PyMOTW/articles/file_access.rst:7
 msgid ""
 "Python's standard library includes a large range of tools for working "
 "with files, filenames, and file contents."
 msgstr ""
+"کتابخانه استاندارد پایتون شامل محدوده وسیعی از ابزارها برای کار با فایلها، "
+"نام فایل ها و محتویات فایل هاست."
 
 #: ../../src/PyMOTW/articles/file_access.rst:10
 msgid "Filenames"
-msgstr ""
+msgstr "نام فایل ها"
 
 #: ../../src/PyMOTW/articles/file_access.rst:12
 msgid ""
@@ -41,10 +45,18 @@ msgid ""
 "filenames from a pattern.  Finer grained filtering of filenames is "
 "possible with :mod:`fnmatch`."
 msgstr ""
+"اولین مرحله برای کار با فایل ها اینست که نام فایل را بدست آورید تا آن عملیاتی "
+"را که می خواهید بر روی فایل انجام بدهید. پایتون نام فایل ها را همانند یک رشته "
+"ساده نشان می دهد، اما ابزارهایی را در ماژول  :mod:`os.path` برای ایجاد نام "
+"فایل ها به شیوه استاندارد و مستقل از پلتفرم  ارائه می دهد. فهرست محتویات یک "
+"پوشه را می توان با تابع ``listdir()`` از ماژول  :mod:`os` بدست آورد ، و یا با "
+"استفاده از ماژول  :mod:`glob` ازطریق یک الگوی مشخص لیستی از نام فایل ها را "
+"تهیه کرد. همچنین تطابق بهتر بر روی نام فایل ها را می توان با ماژول  "
+":mod:`fnmatch` بدست آورد."
 
 #: ../../src/PyMOTW/articles/file_access.rst:15
 msgid "Meta-data"
-msgstr ""
+msgstr "متا داده"
 
 #: ../../src/PyMOTW/articles/file_access.rst:17
 msgid ""
@@ -52,10 +64,13 @@ msgid ""
 "characteristics such as permissions or the file size using ``os.stat()`` "
 "and the constants in :mod:`stat`."
 msgstr ""
+"بعد از آنکه نام فایل را بدست آورید، اکنون ممکن است بخواهید دیگر مشخصات فایل "
+"را همچون مجوزهای آن و یا سایز فایل را با استفاده از تابع ``os.stat()`` و با "
+"کمک ثابت هایی که در ماژول  :mod:`stat` تعریف شده است بررسی نمائید."
 
 #: ../../src/PyMOTW/articles/file_access.rst:20
 msgid "Reading Files"
-msgstr ""
+msgstr "خواندن فایل ها "
 
 #: ../../src/PyMOTW/articles/file_access.rst:22
 msgid ""
@@ -67,6 +82,15 @@ msgid ""
 "directly from ``sys.stdin``.  The result is a flexible tool your users "
 "can run directly on a file or as part of a pipeline."
 msgstr ""
+"در صورتی که قصد نوشتن ابزاری را دارید که ورودی هایی از نوع متن را خط به خط "
+"پردازش می نماید، ماژول  :mod:`fileinput` چارچوب ساده ایی را برای شروع در "
+"اختیارتان می گذارد. API مربوط به fileinput بصورت تکرار شونده بر روی  "
+"``input()``  که یک مولد (generator) است فراخوانی می شود و بدین ترتیب بر روی "
+"هر خطی از فایل که قرار می گیرد می توان پردازش مربوطه را بر روی آن خط انجام "
+"داد. مولد input()  امکان parse کردن آرگومان های خط فرمان را برای نام فایل ها "
+"و یا بطور مستقیم خواندن از ``sys.stdin`` را برعهده دارد. در نتیجه با استفاده "
+"از این ماژول می توانید ابزاری منعطف را در اختیار کاربران تان قرار بدهید که آن "
+"ها بتوانند آن را مستقیما بر روی یک فایل و یا بصورت pipeline اجرا نمایند."
 
 #: ../../src/PyMOTW/articles/file_access.rst:24
 msgid ""
@@ -74,10 +98,14 @@ msgid ""
 "to read lines by their line number.  The contents of the file are "
 "maintained in a cache, so be careful of memory consumption."
 msgstr ""
+"در صورتی که برنامه ی شما نیاز به دسترسی غیر ترتیبی و تصادفی به فایل ها را "
+"دارد، ماژول  :mod:`linecache` خواندن خطوطی از فایل را بر اساس شماره ی خط شان "
+"آسان می سازد. از آنجایی که محتویات فایل در cache ذخیره می شود، از اینرو باید "
+"مراقب مصرف حافظه باشید."
 
 #: ../../src/PyMOTW/articles/file_access.rst:27
 msgid "Temporary Files"
-msgstr ""
+msgstr "فایل های موقت"
 
 #: ../../src/PyMOTW/articles/file_access.rst:29
 msgid ""
@@ -87,10 +115,16 @@ msgid ""
 "directories safely and securely.  Names are guaranteed not to collide, "
 "and include random components so they are not easily guessable."
 msgstr ""
+"برای مواردی که نیاز به ایجاد فایلی بصورت چرک نویس را دارید بدین معنی که قرار "
+"است از آن برای ذخیره ی موقت یکسری داده استفاده کنید، و یا پیش ازانتقال آن به "
+"مکانی دائمی نیاز به ذخیره موقت آن دارید، ماژول :mod:`tempfile` می تواند بسیار "
+"مفید باشد. این ماژول کلاس هایی را برای ایجاد فایل ها و پوشه های موقت بصورت "
+"ایمن و امن ارائه می دهد . نام های موقت فایل های ایجاد شده تضمین شده اند که "
+"دچار تصادم نشوند و شامل بخش های رندمی هستند که به سادگی قابل حدس زدن نیستند."
 
 #: ../../src/PyMOTW/articles/file_access.rst:32
 msgid "Files and Directories"
-msgstr ""
+msgstr "فایل ها و پوشه ها"
 
 #: ../../src/PyMOTW/articles/file_access.rst:34
 msgid ""
@@ -99,4 +133,8 @@ msgid ""
 "operations such as copying files and directories, setting permissions, "
 "etc."
 msgstr ""
+"در صورتی که بطور مکرر نیاز پیدا می کنید که با فایل ها کار کنید و نیازی هم به  "
+"محتوای درون آن ها ندارید، ماژول :mod:`shutil` شامل عملیات سطح بالایی بر روی "
+"فایل ها همچون کپی فایل ها، کپی پوشه ها،  تنظیم مجوزها و موارد دیگر است."
+
 
