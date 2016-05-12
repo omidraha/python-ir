@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Python-ir.org
 # This file is distributed under the same license as the Python-ir package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# or <or@omidraha.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 20:31+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-12 13:56+0330\n"
+"Last-Translator: or <or@omidraha.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../../src/PyMOTW/articles/index.rst:3
 msgid "Features of the Standard Library"
-msgstr ""
+msgstr "ویژگی های کتابخانه استاندارد پایتون"
 
 #: ../../src/PyMOTW/articles/index.rst:5
 msgid ""
@@ -29,4 +31,9 @@ msgid ""
 "from different parts of the library, and show how they relate to one "
 "another."
 msgstr ""
+"این بخش از راهنمای PyMOTW  شامل معرفی ویژگی های ماژول های مختلف در کتابخانه "
+"استاندارد پایتون می باشد که ممکن ست بر مبنای آنچه شما می خواهید تشکیل شده "
+"باشد. هر مقاله ممکن ست شامل ارجاعات متقابل به چندین ماژول از بخش های مختلف "
+"کتابخانه باشد و چگونگی ارتباط بین این ماژول ها را نشان می دهد."
+
 

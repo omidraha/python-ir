@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Python-ir.org
 # This file is distributed under the same license as the Python-ir package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# or <or@omidraha.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 20:31+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-12 23:05+0330\n"
+"Last-Translator: or <or@omidraha.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:5
 msgid "In-Memory Data Structures"
-msgstr ""
+msgstr "ساختمان داده  مبتنی بر حافظه"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:7
 msgid ""
@@ -28,10 +30,15 @@ msgid ""
 "dictionary, and set).  Most applications won't need any other structures,"
 " but when they do the standard library delivers."
 msgstr ""
+"پایتون دارای چندین ساختمان داده برنامه نویسی استاندارد می باشد که از میان آن "
+"ها می توان به `نوع های درونی <http://docs.python.org/library/stdtypes.html>`_ "
+"(که شامل لیست، چندتایی، دیکشنری و مجموعه ها هستند) اشاره کرد. بسیاری از "
+"برنامه های کاربردی نیازی به دیگر ساختمان داده ها نخواهند داشت، اما با این "
+"وجود و در صورت نیاز هم کتابخانه استاندارد پایتون آن را فراهم خواهد کرد. "
 
 #: ../../src/PyMOTW/articles/data_structures.rst:10
 msgid "array"
-msgstr ""
+msgstr "آرایه"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:12
 msgid ""
@@ -43,10 +50,17 @@ msgid ""
 "replaces lists with arrays in to your application without a lot of other "
 "changes."
 msgstr ""
+"برای حجم زیادی از داده ها، ممکن است استفاده از  آرایه :mod:`array` به جای   "
+"لیست ``list`` موثرتر واقع بشود، از آنجایی که عناصر آرایه تنها به یک نوع داده "
+"ی واحد محدود است، می توان آن را درحافظه بصورت فشرده شده تری نسبت به لیست چند "
+"منظوره نشان داد. و بعنوان یک مزیت اضافه نیز باید گفت که آرایه ها می توانند با "
+"بسیاری از متدهای یکسانی که برای لیست ها استفاده می شوند به کار روند. از اینرو "
+"این امکان وجود دارد که در برنامه تان بدون نیاز به تغییرات زیادی بتوانید نوع "
+"های لیست را با نوع های آرایه جایگزین کنید. "
 
 #: ../../src/PyMOTW/articles/data_structures.rst:15
 msgid "Sorting"
-msgstr ""
+msgstr "مرتب سازی"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:17
 msgid ""
@@ -55,6 +69,12 @@ msgid ""
 "remove items from a list, you can maintain the sort order of the list "
 "with low overhead."
 msgstr ""
+"در صورتی که نیاز دارید یک لیست مرتب شده را نگهداری کنید و البته مادامیکه "
+"مقداری را به این لیست اضافه و حذف می کنید مایلید همچنان عناصر این لیست مرتب "
+"شده باقی بماند، می توانید ماوژول  :mod:`heapq` را بررسی کنید. با استفاده از "
+"توابعی که در  :mod:`heapq` موجود می باشد می توان آیتم هایی را به یک لیست "
+"اضافه و یا کم کرد. و به این صورت ترتیب مرتب سازی یک لیست با سربار کمی حفظ می "
+"شود."
 
 #: ../../src/PyMOTW/articles/data_structures.rst:19
 msgid ""
@@ -63,10 +83,14 @@ msgid ""
 "and is an alternative to repeatedly sorting a list that changes "
 "frequently."
 msgstr ""
+"گزینه دیگری که برای ایجاد لیست ها و یا آرایه های مرتب شده وجود دارد استفاده "
+"از ماژول  :mod:`bisect` می باشد . bisect از یک جستجوی دودویی برای پیدا کردن "
+"مکان درج عنصر جدید استفاده می کند، و روش جایگزینی  برای مرتب سازی سریع لیستی "
+"است که مکررا درحال تغییر است."
 
 #: ../../src/PyMOTW/articles/data_structures.rst:22
 msgid "Queue"
-msgstr ""
+msgstr "صف"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:24
 msgid ""
@@ -76,10 +100,15 @@ msgid ""
 ":mod:`multiprocessing` includes a version of a Queue that works between "
 "processes, making it easier to port between the modules."
 msgstr ""
+"اگرچه لیست داخلی با استفاده از متدهای ``pop()`` و ``insert()`` می تواند برای "
+"شبیه سازی یک صف استفاده بشود. اما در مقابل چند thread ایی  ایمن نمی باشد. "
+"برای ترتیب درست ارتباط بین thread ها شما باید از  :mod:`Queue` استفاده "
+"نمائید. :mod:`multiprocessing` دارای نسخه ایی از Queue می باشد که بین process "
+"ها  کار می کند، باعث می شود انتقال بین ماژول ها آسان بشود."
 
 #: ../../src/PyMOTW/articles/data_structures.rst:27
 msgid "collections"
-msgstr ""
+msgstr "مجموعه ها"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:29
 msgid ""
@@ -91,10 +120,17 @@ msgid ""
 "to give each member item an attribute name in addition to a numerical "
 "index."
 msgstr ""
+"ماژول :mod:`collections` شامل پیاده سازی یکسری از ساختمان داده هایی می باشد "
+"که توسعه آنهایی ست که در دیگر ماژول ها وجود دارند. برای مثال Deque یک صف دو "
+"طرفه است و اجازه می دهد که آیتم هایی را از انتها نیز به آن اضافه و کم کنید. "
+"ماژول ``defaultdict`` یک دیکشنری ست که در صورتی که کلید خواسته شده در آن وجود "
+"نداشته باشد یک مقدار پیش فرض را بعنوان مقدار آن برگشت می دهد. و "
+"``namedtuple`` یک چندتایی معمولی را بسط می دهد بطوریکه به هر عنصر علاوه بر "
+"ایندکس عددی یک مشخصه نامی هم می دهد."
 
 #: ../../src/PyMOTW/articles/data_structures.rst:32
 msgid "Decoding Data"
-msgstr ""
+msgstr "رمزگشایی داده"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:34
 msgid ""
@@ -102,10 +138,14 @@ msgid ""
 "from a binary file or stream of data, you will find :mod:`struct` useful "
 "for decoding the data into Python's native types for easier manipulation."
 msgstr ""
+"در صورتی که با داده ایی کار می کنید که از یک برنامه کاربردی دیگر آمده است، که "
+"شاید یک فایل باینری و یا جریانی از داده باشد، احتمالا ماژول  :mod:`struct`  "
+"را برای دیکد کردن داده به درون نوع های اولیه پایتون و دستکاری ساده تر آن مفید "
+"خواهید یافت."
 
 #: ../../src/PyMOTW/articles/data_structures.rst:37
 msgid "Custom Variations"
-msgstr ""
+msgstr "تغییرات دلخواه"
 
 #: ../../src/PyMOTW/articles/data_structures.rst:39
 msgid ""
@@ -114,4 +154,9 @@ msgid ""
 " start from scratch by using the abstract base classes defined in "
 ":mod:`collections`."
 msgstr ""
+"و سرانجام، اگر نوع های در دسترس آنچه را که دقیقا نیاز دارید در اختیارتان قرار "
+"نمی دهند، در این صورت ممکن است بخواهید که یکی از نوع های اولیه را مشتق گیری "
+"کنید و آن را آنطور که می خواهید دلخواه سازی کنید. همچنین می توانید از ابتدا "
+"از کلاس های پایه ی انتزاعی تعریف شده در :mod:`collections` استفاده کنید."
+
 
