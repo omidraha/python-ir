@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2016, Python-ir.org
 # This file is distributed under the same license as the Python-ir package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
-#, fuzzy
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# or <or@omidraha.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-07 20:31+0430\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2016-05-23 02:31+0330\n"
+"Last-Translator: or <or@omidraha.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../../src/PyMOTW/articles/text_processing.rst:5
 msgid "Text Processing Tools"
-msgstr ""
+msgstr "ابزارهای پردازش متن"
 
 #: ../../src/PyMOTW/articles/text_processing.rst:7
 msgid ""
@@ -27,10 +29,13 @@ msgid ""
 "Python programmers, but there are plenty of other tools in the standard "
 "library to make text manipulation simpler."
 msgstr ""
+"اگر چه کلاس string بارزترین ابزار پردازش متن می باشد که برای برنامه نویس های "
+"پایتون در دسترس است، اما ابزارهای متنوع دیگری نیز در کتابخانه استاندارد "
+"پایتون برای ساده سازی عملیات دستکاری متن ها وجود دارد."
 
 #: ../../src/PyMOTW/articles/text_processing.rst:10
 msgid "string module"
-msgstr ""
+msgstr "ماژول string"
 
 #: ../../src/PyMOTW/articles/text_processing.rst:12
 msgid ""
@@ -39,6 +44,11 @@ msgid ""
 "function from the module, and use of the functions is deprecated for new "
 "code."
 msgstr ""
+"کدهایی که دارای استایل قدیمی پایتون هستند به جای آن که از متدهای شیء  "
+":mod:`string` استفاده کنند از توابع درون ماژول string استفاده می کنند. اما "
+"اکنون به ازای هر تابعی که در ماژول string وجود دارد متد معادل آن نیز برای شی "
+"ء های string وجود دارد و درنتیجه استفاده مستقیم از توابع درون ماژول string در "
+"کدهای جدید پایتون منسوخ شده است."
 
 #: ../../src/PyMOTW/articles/text_processing.rst:14
 msgid ""
@@ -49,10 +59,17 @@ msgid ""
 " ground for user-modifiable templates where dynamic values need to be "
 "inserted into otherwise static text."
 msgstr ""
+"کدهای جدید پایتون ممکن است از ماژول  ``string.Template`` بعنوان راهی ساده "
+"برای پارامتردهی به رشته ها جدایی از ویژگی های کلاس های unicode و یا string "
+"استفاده کنند. اگرچه قابلیت های این ماژول ``string.Template`` در حد templates "
+"های بسیار غنی تعریف شده توسط بسیاری از فریم ورک های تحت وب پایتون و یا ماژول "
+"هایی که درفهرست PyPI پایتون در دسترس هستند نمی باشد، اما با این حال ماژول "
+"string.Template نسبتا برای قالب های قابل ویرایش توسط کاربر که نیاز است مقادیر "
+"پویایی درون متن های استاتیک قرار بگیرد مناسب است."
 
 #: ../../src/PyMOTW/articles/text_processing.rst:17
 msgid "Text Input"
-msgstr ""
+msgstr "متن ورودی"
 
 #: ../../src/PyMOTW/articles/text_processing.rst:19
 msgid ""
@@ -64,10 +81,21 @@ msgid ""
 "``sys.stdin``.  The result is a flexible tool your users can run directly"
 " on a file or as part of a pipeline."
 msgstr ""
+"در پایتون خواندن از یک فایل به اندازه ی کافی آسان است، اما اگر بخواهید فایل "
+"را در حین خواندن آن،  خط به خط پردازش هم بکنید، با استفاده از ماژول "
+":mod:`fileinput` کارتان به مراتب آسان تر هم خواهد بود.API مربوط به fileinput "
+"بصورت تکرار شونده بر روی input() که یک مولد (generator) است فراخوانی می شود و "
+"بدین ترتیب بر روی هر خطی از فایل که قرار می گیرد می توان پردازش مربوطه را بر "
+"روی آن خط انجام داد. مولد ``input()``  امکان parse کردن آرگومان های خط فرمان "
+"را "
+"برای نام فایل ها و یا بطور مستقیم خواندن از ``sys.stdin``  را برعهده دارد. در "
+"نتیجه با استفاده از این ماژول می توانید ابزاری منعطف را در اختیار کاربران تان "
+"قرار بدهید که آن ها بتوانند آن را مستقیما بر روی یک فایل و یا بصورت pipeline "
+"اجرا نمایند."
 
 #: ../../src/PyMOTW/articles/text_processing.rst:22
 msgid "Text Output"
-msgstr ""
+msgstr "متن خروجی"
 
 #: ../../src/PyMOTW/articles/text_processing.rst:24
 msgid ""
@@ -75,10 +103,13 @@ msgid ""
 "paragraphs by limiting the width of output, adding indentation, and "
 "inserting line breaks to wrap lines consistently."
 msgstr ""
+"ماژول :mod:`textwrap`، شامل ابزارهایی برای قالب بندی متن می باشد که این کار "
+"را از طریق محدود کردن پهنای متن خروجی،  اضافه کردن تورفتگی و یا درج کاراکتر "
+"پرش به خط بعدی برای روپوشی خطوط بصورت یکدست انجام می دهد."
 
 #: ../../src/PyMOTW/articles/text_processing.rst:27
 msgid "Comparing Values"
-msgstr ""
+msgstr "مقایسه مقادیر"
 
 #: ../../src/PyMOTW/articles/text_processing.rst:29
 msgid ""
@@ -90,6 +121,14 @@ msgid ""
 "comparing strings against a pattern (rather than another fixed string), "
 "and mild parsing."
 msgstr ""
+"کتابخانه ی استاندارد پایتون شامل دو ماژول مرتبط برای مقایسه مقادیر متن ها "
+"می باشد که جدایی از مقایسه به لحاظ ترتیب و برابری مقادیر هستند "
+"که بصورت داخلی توسط اشیاء string  انجام می شود. ماژول  :mod:`re` بطورکامل "
+"کتابخانه"
+"عبارات باقاعده را ارئه می دهد، که به دلیل بالابردن کارایی آن در C پیاده سازی "
+"شده است. بطور کلی عبارات باقاعده برای یافتن زیررشته هایی در داخل یک مجموعه از "
+"داده های بزرگتر، مقایسه رشته ها بر اساس یک الگو (به جای مقایسه با یک رشته "
+"ثابت) مناسب هستند."
 
 #: ../../src/PyMOTW/articles/text_processing.rst:31
 msgid ""
@@ -99,4 +138,10 @@ msgid ""
 " used to provide more detailed feedback to user about where changes occur"
 " in two inputs, how a document has changed over time, etc."
 msgstr ""
+"از طرفی دیگر ماژول :mod:`difflib`، تفاوت واقعی که مابین دنباله ایی از متن ها "
+"وجود دارد را در حالت های بخش های اضافه شده ،حذف شده و یا تغییر داده شده نشان "
+"می دهد. خروجی توابع مقایسه کننده در :mod:`difflib` می تواند برای بازخورد جزئی "
+"تر به کاربر درباره اینکه در چه مکانی از دو ورودی تغییری رخ داده است، و یا "
+"اینکه چطور یک متن یا مستند در طول زمان تغییر کرده است استفاده بشود."
+
 
