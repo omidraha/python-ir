@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python-ir 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-07 20:31+0430\n"
+"POT-Creation-Date: 2016-05-23 02:35+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,28 +18,49 @@ msgstr ""
 "Generated-By: Babel 2.3.4\n"
 
 #: ../../index.rst:7
-msgid "به مستندات  جامع زبان برنامه نویسی پایتون خوش آمدید !"
+msgid "به مستندات  جامع آموزش زبان برنامه نویسی پایتون خوش آمدید !"
 msgstr ""
 
 #: ../../index.rst:10
 msgid ""
-"در بخش مستندات از وب سایت Python-ir.org سعی خواهیم نمود ترجمه کتاب‌ها و "
-"مقالات کاربردی که در زمینه پایتون مؤثر می‌باشند را قرار بدهیم."
-msgstr ""
-
-#: ../../index.rst:22
-msgid "فهرست"
+"به مستندات و منابع جامع آموزش زبان برنامه نویسی پایتون خوش آمدید، در بخش "
+"مستندات از وب سایت Python-ir.org سعی خواهیم نمود ترجمه کتاب‌ها و مقالات و"
+" منابع کاربردی که در زمینه پایتون مؤثر می‌باشند را قرار بدهیم، در ابتدا "
+"به دلیل روند ترجمه ممکن است مطالب به زبان انگلیسی قرار داده بشوند و سپس "
+"به مرور ترجمه گردند."
 msgstr ""
 
 #: ../../index.rst:24
-msgid ":ref:`genindex`"
-msgstr ""
-
-#: ../../index.rst:25
-msgid ":ref:`modindex`"
+msgid "فهرست"
 msgstr ""
 
 #: ../../index.rst:26
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:27
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../index.rst:28
 msgid ":ref:`search`"
 msgstr ""
+
+#~ msgid "به مستندات  جامع زبان برنامه نویسی پایتون خوش آمدید !"
+#~ msgstr ""
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "به مستندات و منابع جامع آموزش زبان"
+#~ " برنامه نویسی پایتون خوش آمدید، در"
+#~ " بخش مستندات از وب سایت Python-"
+#~ "ir.org سعی خواهیم نمود ترجمه کتاب‌ها "
+#~ "و مقالات و منابع کاربردی که در "
+#~ "زمینه پایتون مؤثر می‌باشند را قرار "
+#~ "بدهیم، در ابتدا ممکن است مطالب به"
+#~ " زبان انگلیسی قرار داده بشوند و "
+#~ "سپس به مرور ترجمه گردند."
+#~ msgstr ""
 
