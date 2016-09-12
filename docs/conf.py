@@ -390,7 +390,7 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         (u" وب سایت", " http://python-ir.org", True),
-        (u" کانال تلگرام پایتون", "https://telegram.me/python_ir", True),
+        (u"کانال تلگرام پایتون", "https://telegram.me/python_ir", True),
         (u"گروه تلگرام پایتون", " http://bit.ly/python-ir", True),
     ],
 
