@@ -391,8 +391,8 @@ html_theme_options = {
     'navbar_links': [
         (u" وب سایت", " http://python-ir.org", True),
         (u"ایمیل لیست", "http://bit.ly/python_ir", True),
-        (u"کانال تلگرام پایتون", "https://telegram.me/python_ir", True),
-        (u"گروه تلگرام پایتون", " http://bit.ly/python-ir", True),
+        (u"کانال تلگرام", "https://telegram.me/python_ir", True),
+        (u"گروه تلگرام", " http://bit.ly/python-ir", True),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
